@@ -13,11 +13,9 @@ export default new Vuex.Store({
 				title,
 				done: false
 			})
-			console.log(state.todos);
 		},
 		Edit_Todo (state, { todo, value }) {
 			todo.title = value
-			console.log(value);
 		},
 		Complete_Todo (state, { todo }) {
 			todo.done = !todo.done
